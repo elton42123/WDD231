@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kampala's Chamber of Commerce</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Kampala's Chamber of Commerce">
+  <meta property="og:description" content="Supporting local businesses and community growth in Kampala.">
+  <meta property="og:image" content="images/og-image.png">
+  <meta property="og:url" content="https://elton42123.github.io/WDD231/" />
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+  <header>
+  <img src="images/og-image.png" alt="Chamber Logo" class="logo">
+  
+    <section class="og-title">
+       <h2>Kampala's Chamber of Commerce</h2>
+      <p>Supporting local businesses and community growth in Kampala.</p>
+    </section>
+  <!-- Desktop Nav -->
+  <nav class="desktop-nav">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Discover</a></li>
+      <li><a href="#">Business Directory</a></li>
+      <li><a href="#">Join</a></li>
+    </ul>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+  <nav id="mobileNav">
+    <a href="#">Home</a>
+    <a href="#">Discover</a>
+    <a href="#">Business Directory</a>
+    <a href="#">Join</a>
+  </nav>
+
+  <!-- Theme Toggle -->
+  <button class="theme-toggle" id="themeToggle">Toggle Theme</button>
+</header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <img src="images/hero.png" alt="Scalable responsive hero image">
+    <button>Keynote Tickets</button>
+  </section>
+
+  <main>
+    <h1>Home</h1>
+
+    <div class="cards">
+      <section class="events">
+        <h2>Events</h2>
+        <p>Upcoming events will be displayed here.</p>
+      </section>
+
+      <section class="weather">
+        <h2>Current Weather</h2>
+            <img src="images/weather-icon.png" alt="Weather icon" class="weather-icon">
+
+        <div id="weather-data">Loading weather...</div>
+      </section>
+
+      <section class="forecast">
+        <h2>Weather Forecast</h2>
+        <ul id="forecast-data"></ul>
+      </section>
+    </div>
+
+    <div class="business-cards" id="business-list">
+      <h2>Business Directory</h2>
+      <div id="directory">
+        <!-- Business cards will be populated here by directory.js -->
+      </div>
+    </div>
+    
+  </main>
+
+  <footer>
+    <div>
+      <h3>Kampala's Chamber of Commerce</h3>
+      <p>The Pearl of Africa, Kampala, Uganda 256</p>
+      <p>Email: info@kampalacc.org | Phone: (256) 555-2300</p>
+    </div>
+    <div class="social">
+      <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+      <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+    </div>
+    <p>WDD231 | Isabirye Elton | &copy; <span id="year"></span> Kampala's Chamber of Commerce</p>
+    <p id="lastModified"></p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/weather.js"></script>
+  <script src="js/directory.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Oqatar Wellness Solutions",
+    "address": "42 William St, Kampala, Uganda",
+    "phone": "(256) 555-0101",
+    "website": "https://oqatarwellness-solutions.com",
+    "image": "oqatar.png",
+    "membershipLevel": 3,
+    "tagline": "Making The World a Happier And Healthier Environment, One Person At A Time."
+  },
+  {
+    "name": "Kiira Motors Corporation",
+    "address": "456 Innovation Ave, Kampala, Uganda",
+    "phone": "(256) 555-0202",
+    "website": "https://kiiramotors.com",
+    "image": "kiira.webp",
+    "membershipLevel": 2,
+    "tagline": "Deliver the Ultimate Travel Experience to Your Passengers."
+  },
+  {
+    "name": "Dune Coffee Roasters",
+    "address": "789 Nakivuubo Ave, Kampala, Uganda",
+    "phone": "(256) 555-0303",
+    "website": "https://dunecoffee.ml",
+    "image": "dune.png",
+    "membershipLevel": 1,
+    "tagline": "Brewed from original Uganda's Ultimate Coffee."
+  },
+  {
+    "name": "Kampala Tours and Travel",
+    "address": "321 Adventure Ln, Kampala, Uganda",
+    "phone": "(256) 555-0404",
+    "website": "https://kampalatours.org",
+    "image": "tours.jpg",
+    "membershipLevel": 3,
+    "tagline": "Diving into Uganda's rich culture, discovering the pearl of Africa."
+  },
+  {
+    "name": "Maama-Africa Empowerment",
+    "address": "654 Queens Way, Kampala, Uganda",
+    "phone": "(256) 555-0505",
+    "website": "https://resilientwomen.org",
+    "image": "empowering Uganda.svg",
+    "membershipLevel": 2,
+    "tagline": "Rewrite the narratives of teenage girls and young women in Uganda."
+  },
+  {
+    "name": "Spa & Wellness Gyming Oasis",
+    "address": "987 Relax Rd, Kampala, Uganda",
+    "phone": "(256) 555-0606",
+    "website": "https://oasisspa.ml",
+    "image": "gym-spa.png",
+    "membershipLevel": 1,
+    "tagline": "True change comes from commitment and consistency."
+  }
+
+]
