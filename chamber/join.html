@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join Chamber - Kampala's Chamber of Commerce</title>
+  <meta name="description" content="Apply for membership with Kampala's Chamber of Commerce. Choose from NP, Bronze, Silver, or Gold membership levels.">
+  <meta name="author" content="Isabirye Elton">
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Join Chamber - Kampala's Chamber of Commerce">
+  <meta property="og:description" content="Apply for membership with Kampala's Chamber of Commerce">
+  <meta property="og:image" content="images/og-image.png">
+  <meta property="og:url" content="https://elton42123.github.io/WDD231/chamber/join.html">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/join.css">
+</head>
+
+<body class="light-mode">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <header>
+    <div class="header-content">
+      <img src="images/og-image.png" alt="Kampala Chamber of Commerce logo" class="logo" width="50" height="50">
+      <section class="og-title">
+        <h1>Kampala's Chamber of Commerce</h1>
+        <p>Supporting local businesses and community growth in Kampala.</p>
+      </section>
+
+      <nav class="desktop-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="directory.html">Business Directory</a></li>
+          <li><a href="join.html" class="active">Join</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-controls">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌓</button>
+        <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+
+    <nav id="mobileNav" class="mobile-nav" aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="discover.html">Discover</a>
+      <a href="directory.html">Business Directory</a>
+      <a href="join.html" class="active">Join</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="join-hero">
+      <h2>Join Our Chamber</h2>
+      <p>Become a member and unlock opportunities for growth, networking, and community impact.</p>
+    </section>
+
+    <div class="join-container">
+      <section class="membership-form-section">
+        <h2>Membership Application</h2>
+        <form id="membershipForm" method="get" action="thankyou.html">
+          <div class="form-grid">
+            <!-- Personal Information -->
+            <div class="form-group">
+              <label for="firstName">
+                First Name *
+                <input type="text" id="firstName" name="firstName" required 
+                       title="Enter your first name" autocomplete="given-name">
+              </label>
+            </div>
+
+            <div class="form-group">
+              <label for="lastName">
+                Last Name *
+                <input type="text" id="lastName" name="lastName" required 
+                       title="Enter your last name" autocomplete="family-name">
+              </label>
+            </div>
+
+            <div class="form-group">
+              <label for="title">
+                Organizational Title
+                <input type="text" id="title" name="title" 
+                       title="Enter your organizational title" autocomplete="organization-title"
+                       pattern="[A-Za-z\s\-]{7,}" 
+                       placeholder="e.g., Marketing Director">
+                <small>Minimum 7 characters, letters, spaces, and hyphens only</small>
+              </label>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="form-group">
+              <label for="email">
+                Email Address *
+                <input type="email" id="email" name="email" required 
+                       title="Enter your email address" autocomplete="email"
+                       placeholder="yourname@example.com">
+              </label>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">
+                Mobile Phone *
+                <input type="tel" id="phone" name="phone" required 
+                       title="Enter your mobile phone number" autocomplete="tel">
+              </label>
+            </div>
+
+            <div class="form-group">
+              <label for="businessName">
+                Business/Organization Name *
+                <input type="text" id="businessName" name="businessName" required 
+                       title="Enter your business or organization name" autocomplete="organization">
+              </label>
+            </div>
+
+            <!-- Membership Level -->
+            <div class="form-group full-width">
+              <label for="membershipLevel">
+                Membership Level *
+                <select id="membershipLevel" name="membershipLevel" required title="Select membership level">
+                  <option value="">Choose a membership level</option>
+                  <option value="np">NP Membership (Non-Profit) - Free</option>
+                  <option value="bronze">Bronze Membership</option>
+                  <option value="silver">Silver Membership</option>
+                  <option value="gold">Gold Membership</option>
+                </select>
+              </label>
+            </div>
+
+            <!-- Business Description -->
+            <div class="form-group full-width">
+              <label for="description">
+                Business/Organization Description
+                <textarea id="description" name="description" 
+                          title="Describe your business or organization" rows="4"></textarea>
+              </label>
+            </div>
+
+            <!-- Hidden Timestamp -->
+            <input type="hidden" id="timestamp" name="timestamp">
+
+            <!-- Submit Button -->
+            <div class="form-group full-width">
+              <button type="submit" class="submit-btn">Submit Application</button>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <section class="membership-cards-section">
+        <h2>Membership Levels</h2>
+        <div class="membership-cards">
+          <!-- NP Membership Card -->
+          <article class="membership-card np-card" data-level="np">
+            <div class="card-header">
+              <h3>NP Membership</h3>
+              <div class="price">Free</div>
+            </div>
+            <div class="card-body">
+              <p>For non-profit organizations</p>
+              <ul>
+                <li>Basic directory listing</li>
+                <li>Monthly newsletter</li>
+                <li>Community events access</li>
+              </ul>
+            </div>
+            <button class="info-btn" data-modal="np-modal">View Benefits</button>
+          </article>
+
+          <!-- Bronze Membership Card -->
+          <article class="membership-card bronze-card" data-level="bronze">
+            <div class="card-header">
+              <h3>Bronze Membership</h3>
+              <div class="price">$200/yr</div>
+            </div>
+            <div class="card-body">
+              <p>Perfect for small businesses</p>
+              <ul>
+                <li>Enhanced directory listing</li>
+                <li>Business training workshops</li>
+                <li>Networking events</li>
+              </ul>
+            </div>
+            <button class="info-btn" data-modal="bronze-modal">View Benefits</button>
+          </article>
+
+          <!-- Silver Membership Card -->
+          <article class="membership-card silver-card" data-level="silver">
+            <div class="card-header">
+              <h3>Silver Membership</h3>
+              <div class="price">$400/yr</div>
+            </div>
+            <div class="card-body">
+              <p>For growing businesses</p>
+              <ul>
+                <li>Featured directory listing</li>
+                <li>Advertising opportunities</li>
+                <li>Event discounts</li>
+              </ul>
+            </div>
+            <button class="info-btn" data-modal="silver-modal">View Benefits</button>
+          </article>
+
+          <!-- Gold Membership Card -->
+          <article class="membership-card gold-card" data-level="gold">
+            <div class="card-header">
+              <h3>Gold Membership</h3>
+              <div class="price">$600/yr</div>
+            </div>
+            <div class="card-body">
+              <p>Maximum visibility & benefits</p>
+              <ul>
+                <li>Premium directory placement</li>
+                <li>Home page spotlight</li>
+                <li>VIP event access</li>
+              </ul>
+            </div>
+            <button class="info-btn" data-modal="gold-modal">View Benefits</button>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Membership Benefit Modals -->
+  <div id="np-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h3>NP Membership Benefits</h3>
+      <div class="modal-body">
+        <h4>Perfect for Non-Profit Organizations</h4>
+        <ul>
+          <li>✅ Basic business directory listing</li>
+          <li>✅ Monthly chamber newsletter</li>
+          <li>✅ Access to community events</li>
+          <li>✅ Volunteer opportunities</li>
+          <li>✅ Social media mentions</li>
+          <li>✅ Annual non-profit summit access</li>
+        </ul>
+        <p><strong>Cost: Free for qualified non-profit organizations</strong></p>
+      </div>
+    </div>
+  </div>
+
+  <div id="bronze-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h3>Bronze Membership Benefits</h3>
+      <div class="modal-body">
+        <h4>Ideal for Small Businesses & Startups</h4>
+        <ul>
+          <li>✅ Enhanced directory listing with logo</li>
+          <li>✅ Monthly business training workshops</li>
+          <li>✅ Quarterly networking events</li>
+          <li>✅ Business resource library access</li>
+          <li>✅ Social media promotion</li>
+          <li>✅ 10% discount on chamber events</li>
+        </ul>
+        <p><strong>Cost: $200 per year</strong></p>
+      </div>
+    </div>
+  </div>
+
+  <div id="silver-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h3>Silver Membership Benefits</h3>
+      <div class="modal-body">
+        <h4>For Growing & Established Businesses</h4>
+        <ul>
+          <li>✅ Featured directory listing with premium placement</li>
+          <li>✅ Advertising opportunities in chamber publications</li>
+          <li>✅ 25% discount on all chamber events</li>
+          <li>✅ Exclusive business matchmaking services</li>
+          <li>✅ Priority registration for workshops</li>
+          <li>✅ Monthly business spotlight opportunities</li>
+        </ul>
+        <p><strong>Cost: $400 per year</strong></p>
+      </div>
+    </div>
+  </div>
+
+  <div id="gold-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h3>Gold Membership Benefits</h3>
+      <div class="modal-body">
+        <h4>Maximum Exposure & Premium Benefits</h4>
+        <ul>
+          <li>✅ Premium directory placement with top visibility</li>
+          <li>✅ Home page spotlight feature (rotating)</li>
+          <li>✅ VIP access to all chamber events</li>
+          <li>✅ 50% discount on event sponsorships</li>
+          <li>✅ Dedicated business development consultant</li>
+          <li>✅ Exclusive Gold member networking events</li>
+          <li>✅ Featured in annual business guide</li>
+        </ul>
+        <p><strong>Cost: $600 per year</strong></p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-info">
+        <h3>Kampala's Chamber of Commerce</h3>
+        <p>The Pearl of Africa, Kampala, Uganda 256</p>
+        <p>Email: info@kampalacc.org | Phone: (256) 555-2300</p>
+      </div>
+      <div class="social-links">
+        <a href="#" aria-label="Facebook"><img src="images/facebook.png" alt="Facebook" width="30" height="30"></a>
+        <a href="#" aria-label="Twitter"><img src="images/twitter.png" alt="Twitter" width="30" height="30"></a>
+        <a href="#" aria-label="Instagram"><img src="images/instagram.png" alt="Instagram" width="30" height="30"></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>WDD231 | Isabirye Elton | &copy; <span id="currentYear"></span> Kampala's Chamber of Commerce</p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/join.js"></script>
+</body>
+</html>
