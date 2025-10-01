@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kampala's Chamber of Commerce</title>
+  <meta name="description" content="Supporting local businesses and community growth in Kampala, Uganda.">
+
+  <meta property="og:title" content="Kampala's Chamber of Commerce">
+  <meta property="og:description" content="Supporting local businesses and community growth in Kampala.">
+  <meta property="og:image" content="images/og-image.png">
+  <meta property="og:url" content="https://elton42123.github.io/WDD231/">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/home.css"> 
+</head>
+
+<body class="light-mode">
+  <header>
+    <div class="header-content">
+      <img src="images/og-image.png" alt="Kampala Chamber of Commerce logo" class="logo" width="50" height="50">
+      <section class="og-title">
+        <h1>Kampala's Chamber of Commerce</h1>
+        <p>Supporting local businesses and community growth in Kampala.</p>
+      </section>
+
+      <nav class="desktop-nav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="directory.html">Business Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-controls">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌓</button>
+        <div class="hamburger" aria-label="Open navigation menu">☰</div>
+      </div>
+    </div>
+
+    <nav id="mobileNav" class="mobile-nav" aria-label="Mobile navigation">
+      <a href="index.html" class="active">Home</a>
+      <a href="discover.html">Discover</a>
+      <a href="directory.html">Business Directory</a>
+      <a href="join.html">Join</a>
+    </nav>
+  </header>
+  
+  <section class="hero">
+    <div class="hero-container">
+      <img src="images/hero.png" alt="Kampala skyline showcasing local business activity" width="1200" height="500">
+      <a href="join.html" class="cta-button">Join the Chamber</a>
+    </div>
+  </section>
+
+  <main>
+    <div class="main-grid">
+      <section class="current-events card">
+        <h2>Current Events</h2>
+        <div class="events-list">
+          <article class="event">
+            <h3>Business Networking Mixer</h3>
+            <p class="event-date">March 25, 2024 | 6:00 PM</p>
+            <p>Join local entrepreneurs for an evening of connections and collaboration at the Grand Imperial Hotel.</p>
+          </article>
+          <article class="event">
+            <h3>Economic Development Forum</h3>
+            <p class="event-date">April 2, 2024 | 9:00 AM</p>
+            <p>Discussing Kampala's economic growth opportunities with industry leaders and policymakers.</p>
+          </article>
+          <article class="event">
+            <h3>Small Business Workshop</h3>
+            <p class="event-date">April 15, 2024 | 2:00 PM</p>
+            <p>Learn digital marketing strategies to grow your business in the modern economy.</p>
+          </article>
+        </div>
+      </section>
+
+      <div class="weather-sidebar">
+        <section class="weather-card card">
+          <h2>Current Weather</h2>
+          <div class="weather-content">
+            <div id="weather-data" class="weather-current">
+              <div class="weather-loading">Loading current weather...</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="forecast-card card">
+          <h2>3-Day Forecast</h2>
+          <div class="weather-content">
+            <div id="forecast-data" class="forecast-container">
+              <div class="forecast-loading">Loading forecast...</div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <section class="spotlights-section">
+      <h2>Featured Members</h2>
+      <div id="directory" class="spotlights-container">
+        <div class="spotlights-loading">Loading featured members...</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-info">
+        <h3>Kampala's Chamber of Commerce</h3>
+        <p>The Pearl of Africa, Kampala, Uganda 256</p>
+        <p>Email: info@kampalacc.org | Phone: (256) 555-2300</p>
+      </div>
+      <div class="social-links">
+        <a href="#" aria-label="Facebook"><img src="images/facebook.png" alt="Facebook" width="30" height="30"></a>
+        <a href="#" aria-label="Twitter"><img src="images/twitter.png" alt="Twitter" width="30" height="30"></a>
+        <a href="#" aria-label="Instagram"><img src="images/instagram.png" alt="Instagram" width="30" height="30"></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>WDD231 | Isabirye Elton | &copy; <span id="currentYear"></span> Kampala's Chamber of Commerce</p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/weather.js"></script>
+  <script src="js/directory.js"></script>
+</body>
+</html>

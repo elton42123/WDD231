@@ -6,7 +6,7 @@
     "website": "https://oqatarwellness-solutions.com",
     "image": "oqatar.png",
     "membershipLevel": 3,
-    "tagline": "Making The World a Happier And Healthier Environment, One Person At A Time."
+    "tagline": "Making the world a happier and healthier environment, one person at a time."
   },
   {
     "name": "Kiira Motors Corporation",
@@ -15,16 +15,7 @@
     "website": "https://kiiramotors.com",
     "image": "kiira.webp",
     "membershipLevel": 2,
-    "tagline": "Deliver the Ultimate Travel Experience to Your Passengers."
-  },
-  {
-    "name": "Dune Coffee Roasters",
-    "address": "789 Nakivuubo Ave, Kampala, Uganda",
-    "phone": "(256) 555-0303",
-    "website": "https://dunecoffee.ml",
-    "image": "dune.png",
-    "membershipLevel": 1,
-    "tagline": "Brewed from original Uganda's Ultimate Coffee."
+    "tagline": "Delivering the ultimate travel experience to your passengers."
   },
   {
     "name": "Kampala Tours and Travel",
@@ -33,16 +24,16 @@
     "website": "https://kampalatours.org",
     "image": "tours.jpg",
     "membershipLevel": 3,
-    "tagline": "Diving into Uganda's rich culture, discovering the pearl of Africa."
+    "tagline": "Dive into Uganda's rich culture and discover the Pearl of Africa."
   },
   {
     "name": "Maama-Africa Empowerment",
     "address": "654 Queens Way, Kampala, Uganda",
     "phone": "(256) 555-0505",
     "website": "https://resilientwomen.org",
-    "image": "empowering Uganda.svg",
+    "image": "empowering_Uganda.svg",
     "membershipLevel": 2,
-    "tagline": "Rewrite the narratives of teenage girls and young women in Uganda."
+    "tagline": "Rewriting the narratives of teenage girls and young women in Uganda."
   },
   {
     "name": "Spa & Wellness Gyming Oasis",
@@ -52,6 +43,68 @@
     "image": "gym-spa.png",
     "membershipLevel": 1,
     "tagline": "True change comes from commitment and consistency."
+  },
+  {
+    "name": "Uganda Tech Solutions",
+    "address": "123 Digital Plaza, Kampala, Uganda",
+    "phone": "(256) 555-0707",
+    "website": "https://ugandatech.ug",
+    "image": "tech-solutions.webp",
+    "membershipLevel": 2,
+    "tagline": "Innovative technology solutions for modern businesses."
+  },
+  {
+    "name": "Pearl of Africa Hotels",
+    "address": "789 Luxury Lane, Kampala, Uganda",
+    "phone": "(256) 555-0808",
+    "website": "https://pearlhotels.com",
+    "image": "pearl-hotels.jpg",
+    "membershipLevel": 3,
+    "tagline": "Experience Ugandan hospitality at its finest."
+  },
+  {
+    "name": "Kampala Digital Hub",
+    "address": "234 Tech Valley, Kampala, Uganda",
+    "phone": "(256) 555-0909",
+    "website": "https://kampaladigitalhub.com",
+    "image": "digital-hub.webp",
+    "membershipLevel": 2,
+    "tagline": "Empowering businesses through digital transformation and innovation."
+  },
+  {
+    "name": "Green Harvest Organics",
+    "address": "567 Farm Fresh Rd, Kampala, Uganda",
+    "phone": "(256) 555-1010",
+    "website": "https://greenharvestorganics.ug",
+    "image": "green-harvest.png",
+    "membershipLevel": 1,
+    "tagline": "Fresh, organic produce delivered from our farms to your table."
+  },
+  {
+    "name": "Pearl Financial Services",
+    "address": "890 Finance Tower, Kampala, Uganda",
+    "phone": "(256) 555-1111",
+    "website": "https://pearlfinancial.com",
+    "image": "pearl-financial.webp",
+    "membershipLevel": 3,
+    "tagline": "Your trusted partner for business growth and financial success."
+  },
+  {
+    "name": "Uganda Crafts Collective",
+    "address": "123 Artisan Way, Kampala, Uganda",
+    "phone": "(256) 555-1212",
+    "website": "https://ugandacrafts.org",
+    "image": "crafts-collective.jpg",
+    "membershipLevel": 2,
+    "tagline": "Preserving Ugandan heritage through authentic handmade crafts."
+  },
+  {
+    "name": "Solar Solutions Uganda",
+    "address": "456 Energy Plaza, Kampala, Uganda",
+    "phone": "(256) 555-1313",
+    "website": "https://solarsolutions.ug",
+    "image": "solar-solutions.webp",
+    "membershipLevel": 3,
+    "tagline": "Powering Uganda's future with sustainable solar energy solutions."
   }
-
 ]

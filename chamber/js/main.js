@@ -1,31 +1,64 @@
-// Hamburger Menu (Mobile) 
-const hamburger = document.querySelector(".hamburger");
-const nav = document.querySelector("nav");
-
-hamburger.addEventListener("click", () => {
-  nav.classList.toggle("active");
+// Mobile Navigation Toggle
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    const themeToggle = document.getElementById('themeToggle');
+    
+    // Mobile navigation toggle
+    hamburger.addEventListener('click', function(e) {
+        e.stopPropagation();
+        mobileNav.classList.toggle('active');
+    });
+    
+    // Close mobile nav when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!hamburger.contains(e.target) && !mobileNav.contains(e.target)) {
+            mobileNav.classList.remove('active');
+        }
+    });
+    
+    // Close mobile nav when clicking a link
+    mobileNav.addEventListener('click', function(e) {
+        if (e.target.tagName === 'A') {
+            mobileNav.classList.remove('active');
+        }
+    });
+    
+    // Theme toggle functionality
+    themeToggle.addEventListener('click', function() {
+        const isDark = document.body.classList.toggle('dark-mode');
+        document.body.classList.toggle('light-mode', !isDark);
+        
+        // Update button text
+        themeToggle.textContent = isDark ? '🌞' : '🌓';
+        
+        // Save preference to localStorage
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
+    
+    // Load saved theme preference
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+        document.body.classList.remove('light-mode');
+        themeToggle.textContent = '🌞';
+    }
+    
+    // Update footer year and last modified
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+    document.getElementById('lastModified').textContent = `Last Modified: ${document.lastModified}`;
+    
+    // Add smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
 });
-
-document.addEventListener('DOMContentLoaded', () => {
-  const toggle = document.getElementById('themeToggle');
-  const body = document.body;
-
-  // Default mode
-  body.classList.add('light-mode');
-
-  toggle.addEventListener('click', () => {
-    body.classList.toggle('light-mode');
-    body.classList.toggle('dark-mode');
-  });
-
-  // Set copyright
-  document.getElementById('year').textContent = new Date().getFullYear();
-  document.getElementById('lastModified').textContent = `Last Modified: ${document.lastModified}`;
-});
-
-
-
-
-// Footer dates
-document.getElementById("year").textContent = new Date().getFullYear();
-document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
