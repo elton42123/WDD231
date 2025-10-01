@@ -26,35 +26,35 @@
   <a href="#main-content" class="skip-link">Skip to main content</a>
   
   <header>
-    <div class="header-content">
-      <img src="images/og-image.png" alt="Kampala Chamber of Commerce logo" class="logo" width="50" height="50">
-      <section class="og-title">
-        <h1>Kampala's Chamber of Commerce</h1>
-        <p>Supporting local businesses and community growth in Kampala.</p>
-      </section>
+  <div class="header-content">
+    <img src="images/og-image.png" alt="Kampala Chamber of Commerce logo" class="logo" width="50" height="50">
+    <section class="og-title">
+      <h1>Kampala's Chamber of Commerce</h1>
+      <p>Supporting local businesses and community growth in Kampala.</p>
+    </section>
 
-      <nav class="desktop-nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="discover.html">Discover</a></li>
-          <li><a href="directory.html" class="active">Business Directory</a></li>
-          <li><a href="join.html">Join</a></li>
-        </ul>
-      </nav>
-
-      <div class="header-controls">
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌓</button>
-        <div class="hamburger" aria-label="Open navigation menu">☰</div>
-      </div>
-    </div>
-
-    <nav id="mobileNav" class="mobile-nav" aria-label="Mobile navigation">
-      <a href="index.html">Home</a>
-      <a href="discover.html">Discover</a>
-      <a href="directory.html" class="active">Business Directory</a>
-      <a href="join.html">Join</a>
+    <nav class="desktop-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html" class="active">Business Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
     </nav>
-  </header>
+
+    <div class="header-controls">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌓</button>
+      <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+
+  <nav id="mobileNav" class="mobile-nav" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="discover.html">Discover</a>
+    <a href="directory.html" class="active">Business Directory</a>
+    <a href="join.html">Join</a>
+  </nav>
+</header>
 
   <main id="main-content">
     <section class="directory-header">
@@ -71,7 +71,7 @@
       </div>
     </section>
 
-    <section class="directory-content">
+    <section class="directory-content" aria-label="Business directory listing">
       <div id="membersContainer" class="members-grid">
         <div class="loading-message">Loading chamber members...</div>
       </div>

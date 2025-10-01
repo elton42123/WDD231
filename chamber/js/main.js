@@ -4,25 +4,29 @@ document.addEventListener('DOMContentLoaded', function() {
     const mobileNav = document.getElementById('mobileNav');
     const themeToggle = document.getElementById('themeToggle');
     
-    // Mobile navigation toggle
-    hamburger.addEventListener('click', function(e) {
-        e.stopPropagation();
-        mobileNav.classList.toggle('active');
-    });
-    
-    // Close mobile nav when clicking outside
-    document.addEventListener('click', function(e) {
-        if (!hamburger.contains(e.target) && !mobileNav.contains(e.target)) {
-            mobileNav.classList.remove('active');
-        }
-    });
-    
-    // Close mobile nav when clicking a link
-    mobileNav.addEventListener('click', function(e) {
-        if (e.target.tagName === 'A') {
-            mobileNav.classList.remove('active');
-        }
-    });
+  // Mobile navigation toggle
+hamburger.addEventListener('click', function(e) {
+    e.stopPropagation();
+    const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
+    hamburger.setAttribute('aria-expanded', !isExpanded);
+    mobileNav.classList.toggle('active');
+});
+
+// Close mobile nav when clicking outside
+document.addEventListener('click', function(e) {
+    if (!hamburger.contains(e.target) && !mobileNav.contains(e.target)) {
+        mobileNav.classList.remove('active');
+        hamburger.setAttribute('aria-expanded', 'false');
+    }
+});
+
+// Close mobile nav when clicking a link
+mobileNav.addEventListener('click', function(e) {
+    if (e.target.tagName === 'A') {
+        mobileNav.classList.remove('active');
+        hamburger.setAttribute('aria-expanded', 'false');
+    }
+});
     
     // Theme toggle functionality
     themeToggle.addEventListener('click', function() {
