@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Plan - Kampala Business Connect</title>
+    <meta name="description" content="Site plan for Kampala Business Connect - A platform connecting local businesses in Uganda">
+    <style>
+        /* ========== COLOR SCHEMA ========== */
+        :root {
+            --primary-color: #2C5530;    /* Forest Green - Main brand color */
+            --secondary-color: #D4AF37;  /* Gold - Accent color */
+            --accent-color: #8B4513;     /* Saddle Brown - Secondary accent */
+            --text-dark: #1A1A1A;        /* Dark text */
+            --text-light: #FFFFFF;       /* Light text */
+            --bg-light: #F8F9FA;         /* Light background */
+            --bg-white: #FFFFFF;         /* White background */
+        }
+
+        /* ========== TYPOGRAPHY ========== */
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: var(--text-light);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            color: var(--accent-color);
+        }
+
+        /* ========== LAYOUT ========== */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: var(--text-light);
+            padding: 2rem 0;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .site-name {
+            font-size: 3rem;
+            margin: 0;
+            color: var(--text-light);
+        }
+
+        .site-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin: 0.5rem 0 0 0;
+        }
+
+        section {
+            background: var(--bg-white);
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-left: 4px solid var(--secondary-color);
+        }
+
+        .color-schema, .typography {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .color-sample {
+            padding: 2rem;
+            border-radius: 8px;
+            color: var(--text-light);
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .primary-color { background-color: var(--primary-color); }
+        .secondary-color { background-color: var(--secondary-color); color: var(--text-dark); }
+        .accent-color { background-color: var(--accent-color); }
+        .text-dark { background-color: var(--text-dark); }
+
+        .font-sample {
+            padding: 1rem;
+            border: 2px solid var(--primary-color);
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+
+        .heading-font {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            font-size: 1.5rem;
+        }
+
+        .body-font {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            font-size: 1rem;
+        }
+
+        .wireframe-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .wireframe {
+            background: var(--bg-white);
+            border: 2px solid var(--primary-color);
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .wireframe-placeholder {
+            background: var(--bg-light);
+            border: 2px dashed var(--accent-color);
+            border-radius: 4px;
+            padding: 3rem;
+            margin: 1rem 0;
+            color: var(--accent-color);
+        }
+
+        footer {
+            background: var(--primary-color);
+            color: var(--text-light);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        /* ========== RESPONSIVE DESIGN ========== */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1rem;
+            }
+            
+            .site-name {
+                font-size: 2rem;
+            }
+            
+            section {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="site-name">Kampala Business Connect</h1>
+            <p class="site-subtitle">Site Plan Document</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Site Name Section -->
+        <section id="site-name">
+            <h2>Site Name</h2>
+            <h3>Kampala Business Connect</h3>
+            <p><strong>Reason for Selection:</strong> This name clearly identifies the geographical focus (Kampala, Uganda) and the primary purpose (connecting businesses). It's memorable, professional, and clearly communicates the platform's value proposition of facilitating business connections and networking within the Kampala business community.</p>
+            <p><strong>Optional Domain Availability:</strong> kampalabusinessconnect.ug or kampalaconnect.org</p>
+        </section>
+
+        <!-- Site Purpose Section -->
+        <section id="site-purpose">
+            <h2>Site Purpose</h2>
+            <p>The Kampala Business Connect website serves as a comprehensive digital hub for local businesses in Uganda's capital city. The platform will provide:</p>
+            <ul>
+                <li><strong>Business Directory:</strong> A searchable database of local businesses with detailed profiles</li>
+                <li><strong>Networking Opportunities:</strong> Event calendars and meeting facilitation for business professionals</li>
+                <li><strong>Resource Center:</strong> Business development resources, market insights, and regulatory information</li>
+                <li><strong>Partnership Matching:</strong> Tools to connect complementary businesses for collaboration</li>
+                <li><strong>Community Engagement:</strong> Platform for business owners to share experiences and best practices</li>
+            </ul>
+            <p>The site aims to foster economic growth by making it easier for Kampala businesses to connect, collaborate, and access valuable resources.</p>
+        </section>
+
+        <!-- Scenarios Section -->
+        <section id="scenarios">
+            <h2>Scenarios</h2>
+            <p>These questions represent common inquiries from our target audience:</p>
+            
+            <div class="scenario-list">
+                <article>
+                    <h3>Scenario 1: The New Entrepreneur</h3>
+                    <p><strong>User:</strong> Sarah, a 28-year-old starting a boutique coffee shop in Nakasero</p>
+                    <p><strong>Question:</strong> "Where can I find reliable local suppliers for coffee beans and bakery ingredients in Kampala, and how can I connect with other restaurant owners for advice?"</p>
+                    <p><strong>Site Response:</strong> The business directory with supplier categories and the networking events section would help Sarah find suppliers and connect with experienced restaurateurs.</p>
+                </article>
+
+                <article>
+                    <h3>Scenario 2: The Established Business Owner</h3>
+                    <p><strong>User:</strong> David, a 45-year-old owner of a growing IT company</p>
+                    <p><strong>Question:</strong> "How can I find potential business partners for expanding my services to new markets in East Africa, and what upcoming business networking events are happening in Kampala?"</p>
+                    <p><strong>Site Response:</strong> The partnership matching tool and comprehensive events calendar would provide David with relevant connections and networking opportunities.</p>
+                </article>
+
+                <article>
+                    <h3>Scenario 3: The International Investor</h3>
+                    <p><strong>User:</strong> Maria, a venture capitalist exploring opportunities in Uganda</p>
+                    <p><strong>Question:</strong> "Which tech startups in Kampala are seeking investment, and what support services are available for foreign investors?"</p>
+                    <p><strong>Site Response:</strong> The business directory with investment-ready filters and resource center with investor information would assist Maria in her research.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Color Schema Section -->
+        <section id="color-schema">
+            <h2>Color Schema</h2>
+            <p>The color palette is inspired by Uganda's natural beauty and vibrant culture, creating a professional yet warm appearance.</p>
+            
+            <div class="color-schema">
+                <div class="color-sample primary-color">
+                    <h3>Primary Color</h3>
+                    <p>#2C5530 (Forest Green)</p>
+                    <p><strong>Usage:</strong> Main brand color, headers, primary buttons, navigation</p>
+                </div>
+                
+                <div class="color-sample secondary-color">
+                    <h3>Secondary Color</h3>
+                    <p>#D4AF37 (Gold)</p>
+                    <p><strong>Usage:</strong> Accent color, call-to-action buttons, highlights, borders</p>
+                </div>
+                
+                <div class="color-sample accent-color">
+                    <h3>Accent Color</h3>
+                    <p>#8B4513 (Saddle Brown)</p>
+                    <p><strong>Usage:</strong> Secondary accents, section backgrounds, footer elements</p>
+                </div>
+                
+                <div class="color-sample text-dark">
+                    <h3>Text Color</h3>
+                    <p>#1A1A1A (Dark Gray)</p>
+                    <p><strong>Usage:</strong> Primary text content, body copy</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Typography Section -->
+        <section id="typography">
+            <h2>Typography</h2>
+            <p>The typography system combines classic serif fonts for headings with modern sans-serif for body text to create a balanced, professional appearance.</p>
+            
+            <div class="typography">
+                <div class="font-sample heading-font">
+                    <h3>Heading Font</h3>
+                    <p>Georgia / Times New Roman (Serif)</p>
+                    <p style="font-size: 2rem;">Main Headings H1</p>
+                    <p style="font-size: 1.5rem;">Section Headings H2</p>
+                    <p style="font-size: 1.25rem;">Subheadings H3</p>
+                    <p><strong>Usage:</strong> All headings, navigation labels, prominent text elements</p>
+                </div>
+                
+                <div class="font-sample body-font">
+                    <h3>Body Font</h3>
+                    <p>Segoe UI / System Fonts (Sans-serif)</p>
+                    <p>This is how body text will appear throughout the website. The clean, readable sans-serif font ensures excellent readability for longer content sections.</p>
+                    <p><strong>Usage:</strong> Body text, paragraphs, form labels, button text, general content</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wireframe Section -->
+        <section id="wireframe">
+            <h2>Wireframe</h2>
+            <p>Basic layout sketches showing the home page structure for different screen sizes:</p>
+            
+            <div class="wireframe-grid">
+                <div class="wireframe">
+                    <h3>Mobile View</h3>
+                    <div class="wireframe-placeholder">
+                        <strong>Header</strong><br>
+                        Logo | Menu Icon
+                    </div>
+                    <div class="wireframe-placeholder">
+                        <strong>Hero Section</strong><br>
+                        Welcome Message & CTA
+                    </div>
+                    <div class="wireframe-placeholder">
+                        <strong>Business Search</strong><br>
+                        Search Bar & Filters
+                    </div>
+                    <div class="wireframe-placeholder">
+                        <strong>Featured Businesses</strong><br>
+                        Business Cards (Stacked)
+                    </div>
+                    <div class="wireframe-placeholder">
+                        <strong>Upcoming Events</strong><br>
+                        Event List
+                    </div>
+                    <div class="wireframe-placeholder">
+                        <strong>Footer</strong><br>
+                        Links & Contact
+                    </div>
+                </div>
+                
+                <div class="wireframe">
+                    <h3>Desktop View</h3>
+                    <div class="wireframe-placeholder">
+                        <strong>Header</strong><br>
+                        Logo | Full Navigation | Search
+                    </div>
+                    <div class="wireframe-placeholder" style="display: grid; grid-template-columns: 2fr 1fr; gap: 1rem;">
+                        <div>
+                            <strong>Main Content</strong><br>
+                            Hero + Business Grid
+                        </div>
+                        <div>
+                            <strong>Sidebar</strong><br>
+                            Events + Resources
+                        </div>
+                    </div>
+                    <div class="wireframe-placeholder" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem;">
+                        <div>Stats</div>
+                        <div>Testimonials</div>
+                        <div>News</div>
+                    </div>
+                    <div class="wireframe-placeholder">
+                        <strong>Footer</strong><br>
+                        4 Column Layout
+                    </div>
+                </div>
+            </div>
+            
+            <p><strong>Layout Features:</strong> Responsive grid system, clear visual hierarchy, prominent search functionality, and intuitive navigation patterns optimized for both business professionals and casual visitors.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Kampala Business Connect Site Plan &copy; 2024</p>
+            <p>WDD231 Individual Project | Designed with accessibility and user experience in mind</p>
+        </div>
+    </footer>
+</body>
+</html>
