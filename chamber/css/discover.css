@@ -1,0 +1,386 @@
+/* ========== Discover Page Specific Styles ========== */
+
+/* Visitor Message */
+.visitor-message {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+  color: var(--text-light);
+  padding: 1rem 2rem;
+  text-align: center;
+  position: relative;
+  display: none;
+}
+
+.visitor-message.show {
+  display: block;
+  animation: slideDown 0.5s ease;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+#close-message {
+  background: none;
+  border: none;
+  color: var(--text-light);
+  font-size: 1.5rem;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  padding: 0.25rem;
+}
+
+#close-message:hover {
+  color: var(--accent-color);
+}
+
+/* Hero Section */
+.discover-hero {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+  color: var(--text-light);
+  padding: 3rem 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.discover-hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.discover-hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Demographics Section */
+.demographics {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  padding: 0 1rem;
+}
+
+.demographics h2 {
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+body.dark-mode .demographics h2 {
+  color: var(--accent-color);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.stat-card {
+  background: var(--bg-light);
+  border: 2px solid var(--primary-color);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+body.dark-mode .stat-card {
+  background: #2d2d2d;
+  border-color: var(--accent-color);
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+}
+
+.stat-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+body.dark-mode .stat-card h3 {
+  color: var(--accent-color);
+}
+
+.stat-card p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text-dark);
+  margin: 0;
+}
+
+body.dark-mode .stat-card p {
+  color: var(--text-light);
+}
+
+/* Attractions Grid - Named Grid Areas */
+.attractions-grid {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  padding: 0 1rem;
+}
+
+.attractions-grid h2 {
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+body.dark-mode .attractions-grid h2 {
+  color: var(--accent-color);
+}
+
+.attractions-container {
+  display: grid;
+  gap: 2rem;
+}
+
+/* Small Screens (320px - 640px) */
+.attractions-container.small-grid {
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8";
+}
+
+/* Medium Screens (641px - 1024px) */
+.attractions-container.medium-grid {
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "card1 card2"
+    "card3 card4"
+    "card5 card6"
+    "card7 card8";
+}
+
+/* Large Screens (1025px+) */
+.attractions-container.large-grid {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "card1 card2 card3"
+    "card4 card5 card6"
+    "card7 card8 .";
+}
+
+/* Card Styles */
+.attraction-card {
+  background: var(--bg-light);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+body.dark-mode .attraction-card {
+  background: #2d2d2d;
+}
+
+.attraction-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* Assign grid areas to cards */
+.attraction-card:nth-child(1) { grid-area: card1; }
+.attraction-card:nth-child(2) { grid-area: card2; }
+.attraction-card:nth-child(3) { grid-area: card3; }
+.attraction-card:nth-child(4) { grid-area: card4; }
+.attraction-card:nth-child(5) { grid-area: card5; }
+.attraction-card:nth-child(6) { grid-area: card6; }
+.attraction-card:nth-child(7) { grid-area: card7; }
+.attraction-card:nth-child(8) { grid-area: card8; }
+
+/* Card Image */
+.card-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effects (Desktop only) */
+@media (min-width: 641px) {
+  .card-image img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.1) contrast(1.1);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  }
+}
+
+/* Card Content */
+.card-content {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-content h2 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  text-align: left;
+}
+
+body.dark-mode .card-content h2 {
+  color: var(--accent-color);
+}
+
+.card-address {
+  font-style: normal;
+  color: #666;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+body.dark-mode .card-address {
+  color: #ccc;
+}
+
+.card-description {
+  color: var(--text-dark);
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  flex: 1;
+}
+
+body.dark-mode .card-description {
+  color: var(--text-light);
+}
+
+.learn-more-btn {
+  background: var(--primary-color);
+  color: var(--text-light);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: fit-content;
+}
+
+.learn-more-btn:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+/* Loading State */
+.loading-message {
+  text-align: center;
+  padding: 3rem;
+  color: #666;
+  font-style: italic;
+  grid-column: 1 / -1;
+}
+
+body.dark-mode .loading-message {
+  color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  .discover-hero h2 {
+    font-size: 2rem;
+  }
+  
+  .discover-hero p {
+    font-size: 1.1rem;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .card-content {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .visitor-message {
+    padding: 1rem;
+  }
+  
+  #close-message {
+    right: 0.5rem;
+  }
+  /* Enhanced Modal Styles */
+.attraction-modal {
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.modal-content {
+    animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+    from { 
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Enhanced Learn More button hover effect */
+.learn-more-btn {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.learn-more-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.learn-more-btn:active {
+    transform: translateY(0);
+}
+}

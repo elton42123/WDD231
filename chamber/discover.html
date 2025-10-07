@@ -3,13 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thank You - Kampala's Chamber of Commerce</title>
-  <meta name="description" content="Thank you for joining Kampala's Chamber of Commerce">
-  
+  <title>Discover Kampala - Chamber of Commerce</title>
+  <meta name="description" content="Explore the beautiful attractions and landmarks in Kampala, Uganda">
+  <meta name="author" content="Isabirye Elton">
+
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Discover Kampala - Chamber of Commerce">
+  <meta property="og:description" content="Explore the beautiful attractions and landmarks in Kampala, Uganda">
+  <meta property="og:image" content="images/og-image.png">
+  <meta property="og:url" content="https://elton42123.github.io/WDD231/chamber/discover.html">
+  <meta property="og:type" content="website">
+
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/thankyou.css">
+  <link rel="stylesheet" href="css/discover.css">
 </head>
 
 <body class="light-mode">
@@ -26,7 +35,7 @@
       <nav class="desktop-nav">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="discover.html">Discover</a></li>
+          <li><a href="discover.html" class="active">Discover</a></li>
           <li><a href="directory.html">Business Directory</a></li>
           <li><a href="join.html">Join</a></li>
         </ul>
@@ -40,25 +49,49 @@
 
     <nav id="mobileNav" class="mobile-nav" aria-label="Mobile navigation">
       <a href="index.html">Home</a>
-      <a href="discover.html">Discover</a>
+      <a href="discover.html" class="active">Discover</a>
       <a href="directory.html">Business Directory</a>
       <a href="join.html">Join</a>
     </nav>
   </header>
 
   <main id="main-content">
-    <section class="thankyou-hero">
-      <h2>Thank You for Your Application!</h2>
-      <p>We've received your membership application and will contact you shortly.</p>
+    <!-- Visitor Message -->
+    <div id="visitor-message" class="visitor-message">
+      <span id="message-text"></span>
+      <button id="close-message" aria-label="Close message">&times;</button>
+    </div>
+
+    <section class="discover-hero">
+      <h2>Discover Kampala</h2>
+      <p>Explore the vibrant culture, rich history, and beautiful landmarks of Uganda's capital city</p>
     </section>
 
-    <section class="application-summary">
-      <h2>Application Summary</h2>
-      <div id="applicationData" class="summary-data">
-        <!-- Data will be populated by JavaScript -->
-        <div class="loading-message">Loading your application details...</div>
+    <section class="demographics">
+      <h2>About Kampala</h2>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <h3>Population</h3>
+          <p>3.8 Million</p>
+        </div>
+        <div class="stat-card">
+          <h3>Elevation</h3>
+          <p>1,190 meters</p>
+        </div>
+        <div class="stat-card">
+          <h3>Founded</h3>
+          <p>1890</p>
+        </div>
+        <div class="stat-card">
+          <h3>Language</h3>
+          <p>English & Luganda</p>
+        </div>
       </div>
-      <a href="index.html" class="back-home-btn">Return to Homepage</a>
+    </section>
+
+    <section class="attractions-grid" id="attractions-container">
+      <h2>Top Attractions</h2>
+      <div class="loading-message">Loading amazing places to visit...</div>
     </section>
   </main>
 
@@ -82,6 +115,6 @@
   </footer>
 
   <script src="js/main.js"></script>
-  <script src="js/thankyou.js"></script>
+  <script src="js/discover.js"></script>
 </body>
 </html>

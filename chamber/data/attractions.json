@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "Uganda Museum",
+    "address": "5-7 Kira Road, Kampala",
+    "description": "The oldest museum in East Africa, showcasing Uganda's cultural heritage with ethnographic, natural historical, and traditional music collections.",
+    "image": "attractions/uganda-museum.webp"
+  },
+  {
+    "id": 2,
+    "name": "Kasubi Tombs",
+    "address": "Kasubi Hill, Kampala",
+    "description": "UNESCO World Heritage Site and burial grounds for Buganda kings, featuring traditional architecture and important cultural significance.",
+    "image": "attractions/kasubi-tombs.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Namugongo Martyrs Shrine",
+    "address": "Namugongo, Kira Municipality",
+    "description": "Catholic basilica built to honor the Ugandan martyrs who were executed for their faith in 1886, an important pilgrimage site.",
+    "image": "attractions/martyrs-shrine.webp"
+  },
+  {
+    "id": 4,
+    "name": "Bahai Temple",
+    "address": "Kikaya Hill, Kampala",
+    "description": "The only Bahai temple in Africa, known for its beautiful architecture, serene gardens, and panoramic views of Kampala.",
+    "image": "attractions/bahai-temple.webp"
+  },
+  {
+    "id": 5,
+    "name": "Owino Market",
+    "address": "St. Balikuddembe Market, Kampala",
+    "description": "Kampala's largest and most vibrant market offering everything from fresh produce to clothing and electronics in a bustling atmosphere.",
+    "image": "attractions/owino-market.webp"
+  },
+  {
+    "id": 6,
+    "name": "Ndere Cultural Centre",
+    "address": "Ntinda, Kampala",
+    "description": "Cultural center promoting Ugandan traditions through music, dance performances, and cultural exhibitions in a beautiful outdoor setting.",
+    "image": "attractions/ndere.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Lubiri Palace",
+    "address": "Mengo Hill, Kampala",
+    "description": "Former palace of the Kabaka of Buganda with historical significance and beautiful grounds offering insights into Buganda kingdom history.",
+    "image": "attractions/lubiiri-palace.webp"
+  },
+  {
+    "id": 8,
+    "name": "Gaddafi National Mosque",
+    "address": "Old Kampala Hill, Kampala",
+    "description": "Uganda's national mosque with capacity for 15,000 worshippers, offering stunning architecture and panoramic views of Kampala from its minaret.",
+    "image": "attractions/gaddafi-mosque.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Uganda Wildlife Education Centre",
+    "address": "Entebbe Road, Kampala",
+    "description": "Conservation center showcasing Uganda's diverse wildlife with educational programs and animal encounters in naturalistic habitats.",
+    "image": "attractions/uwec.webp"
+  },
+  {
+    "id": 10,
+    "name": "Kabaka's Lake",
+    "address": "Ndeeba, Kampala",
+    "description": "The largest man-made lake in Uganda, created in 1880 by Kabaka Mwanga II, offering peaceful boat rides and beautiful scenery.",
+    "image": "attractions/kabaka's-lake.jpg"
+  },
+  {
+    "id": 11,
+    "name": "National Theatre",
+    "address": "De Winton Road, Kampala",
+    "description": "Cultural hub hosting theatrical performances, art exhibitions, and creative workshops showcasing Uganda's vibrant arts scene.",
+    "image": "attractions/national-theater.jpg"
+  },
+  {
+  "id": 12,
+  "name": "Namirembe Cathedral",
+  "address": "Namirembe Hill, Kampala",
+  "description": "The oldest Anglican cathedral in Uganda, offering stunning Gothic architecture, historical significance, and panoramic views of Kampala from its hilltop location.",
+  "image": "attractions/namirembe-cathedral.jpg"
+  }
+]
